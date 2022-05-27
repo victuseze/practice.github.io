@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+   
+    
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    padding: 5px;
+    background: linear-gradient(to right, rgb(244, 250, 248), rgb(111, 211, 194));
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+    width: 100%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+   
+}
+li{
+    padding-top: 20px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+nav ul li a:hover{
+    color: orangered;
+}
+.logo img{
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    padding: 20px;
+    
+}
+.menu{
+    margin-top: 10px;
+}
+.col{
+    flex: 50%;
+}
+p span{
+    color: red;
+}
+.col-1 h1{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 100px;
+}
+.col-1 p{
+    font-size: 50px;
+    margin-left: 50px;
+    color: slategray;
+}
+.col-1 h2{
+    color: sienna;
+    margin-top: 40px;
+    font-size: 50px;
+    margin-left: 50px;
+}
+.col-1{
+    margin-top: 70px;
+}
+.col-2 img{
+    border-radius: 50%;
+    margin-left: 80px;
+}
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul li{
+        display: block;
+        left: 20px;
+        position: relative;
+    }
+    nav ul{
+        /*background:  linear-gradient(to right, rgb(244, 250, 248), rgb(111, 211, 194));*/
+        width: 100%;
+        border-radius: 5px;
+        
+    }
+    .logo img{
+        width: 80px;
+    }
+    .col-1 h1{
+        font-size: 20px;
+    }
+    .col-1 p{
+        font-size: 20px;
+    }
+    .col-1 h2{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-2 img{
+        width: 250px;
+        border: 1px red solid;
+        margin-left: 50px;
+    }
+    .col-1{
+        margin-top: 10px;
+    }
+    #menu-list{
+        overflow: hidden;
+        transition: 0.9s;
+      
+    }
+    .menu{
+        display: block;
+        margin-left: 20px;
+    }
+}
